@@ -87,7 +87,7 @@ export default function Works() {
   return (
     <section id="section-works" className="section">
       <div className="title">
-        <h2><span>04.</span> Works</h2>        
+        <h2><span>04.</span> Projects</h2>        
       </div>
       <div className="content">
         <div className={styles.projectGrid}>

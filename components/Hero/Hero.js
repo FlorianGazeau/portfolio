@@ -30,7 +30,7 @@ export default function Hero() {
           <a href="https://codepen.io/floriangazeau">
             <FaCodepen />
           </a>
-          <a href="https://www.instagram.com/">
+          <a href="https://www.instagram.com/vlo_ciraptor/">
             <FaInstagram />
           </a>
         </div>

@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import About from '../components/About/About'
 import Contact from '../components/Contact/Contact'
 import Experiences from '../components/Experiences/Experiences'
@@ -10,6 +11,10 @@ export default function Home() {
 
   return (
     <div>
+      <Head>
+        <title>Florian Gazeau</title>
+        <meta property="og:title" content="Florian Gazeau" key="title" />
+      </Head>
       <Hero/>
       <About />
       <Experiences />
