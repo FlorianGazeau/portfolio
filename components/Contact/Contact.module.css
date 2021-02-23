@@ -1,0 +1,48 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact h3 {
+  font-size: 2em;
+}
+
+.form {
+  width: 300px;
+  margin: auto;
+}
+
+.btnForm {
+  width: 150px;
+  margin: 0.5em auto;
+  border: none;
+  background-color: var(--brown);
+  color: white;
+  padding: 0.5em 0;
+  cursor: pointer;
+  transition: 250ms fade-in;
+  outline: none;
+}
+
+.btnForm:hover {
+  background: white;
+  color: var(--navy);
+}
+
+.label {
+  text-align: left;
+  color: white;
+  margin-bottom: 0.5em;
+}
+
+.formControl {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputControl {
+  outline: none;
+  padding: 0.5em;
+}

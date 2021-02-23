@@ -1,0 +1,25 @@
+.section h3 {
+  margin-bottom: 1em;
+}
+
+.section li {
+  color: var(--cyan);
+  font-size: var(--text);
+  margin-bottom: 0.8em;
+}
+
+.section li:last-child {
+  margin-bottom: 0;
+}
+
+.section .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+}
+
+@media screen and (min-width: 785px) {
+  .section .content {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
