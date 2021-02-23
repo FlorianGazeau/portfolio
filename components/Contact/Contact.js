@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import emailjs from 'emailjs-com'
 
 import styles from './Contact.module.css'
@@ -9,6 +9,7 @@ export default function Contact() {
   const Email = useRef()
   const Message = useRef()
   const Subject = useRef()
+  const [Mes, setMes] = useState()
 
   const resetForm = () => {
     document.getElementById("form").reset();
@@ -26,10 +27,10 @@ export default function Contact() {
 
     emailjs.send("service_stj7r1q","template_zu1sbtj", emailInfo, "user_MM9BdVr54ARVm3MCW0dgZ")
     .then(function(response) {
-      console.log('SUCCESS!', response.status, response.text);
+      setMes("Your message has been sent. I will answer you as soon as possible.")
       resetForm()
     }, function(error) {
-        console.log('FAILED...', error);
+        setMes("Your message has not been sent. Please try again.")
     });
   }
 
@@ -40,6 +41,7 @@ export default function Contact() {
         <h3>Let's Talk</h3>
         <p>New projects, freelance inquiry or even a beer.</p>
       </div>
+      {Mes && <p>{Mes}</p>}
       <form className={styles.form} onSubmit={handleSubmit} id='form'>
         <div className={styles.formControl}>
           <label htmlFor="name" className={styles.label}>Name</label>

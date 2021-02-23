@@ -12,7 +12,6 @@ export const Projects = [
     description: "Personal Project. We decided to build, with a friend, our own Movie App. We can rate a movie, add to watchlist or to watched. For series, the app allows you to know our progress in a season, to know if an episode has been completed.",
     tag: ["React", "Firebase", "Sass", "TMDB Api", "React Hooks"],
     github: "https://github.com/FlorianGazeau/movieApp",
-    link: ""
   },
   {
     id: 2,
@@ -27,7 +26,6 @@ export const Projects = [
     title: "Clinique Juridique Montpellier",
     description: "I developed the showcase site of the Legal Clinic of Montpelier under wordpress. I used a tool like Elementor to create the different parts of the site. I also used a plugin for the translation of the site in 5 different languages",
     tag: ["Wordpress", "Elementor"],
-    github: "",
     link: "https://www.cliniquejuridique.eu/"
   },
   {
@@ -35,7 +33,6 @@ export const Projects = [
     title: "Passy Plaza",
     description: "During my internship, I had the opportunity to work on the PlassyPlaza website where I could learn the basics of wordpress",
     tag: ["Wordpress"],
-    github: "",
     link: "https://www.passyplaza.fr/"
   },
   {
@@ -44,7 +41,6 @@ export const Projects = [
     description: "2nd project of the Web branch of 42. Create a dating website where the user can create a profile, search for other users like them and start a conversation with a chat if the person liked it in return.",
     tag: ["React", "Node", "Express", "SQL", "Socket.io"],
     github: "https://github.com/FlorianGazeau/Matcha",
-    link: ""
   },
   {
     id: 6,
@@ -52,7 +48,6 @@ export const Projects = [
     description: "Camagru is the first project of the Web branch of School 42. This web project allows you to do photo retouching using your webcam and some predefined images. Users of the application can select an image from a list of overlapping images, take a picture with their webcam and admire the result mixing the two images. All captured images are public, friendly and commentable.",
     tag: ["HTML", "CSS", "Javascript", "PHP", "SQL"],
     github: "https://github.com/FlorianGazeau/camagru",
-    link: ""
   },
 
 ]
@@ -61,17 +56,23 @@ export default function Works() {
 
   const card = Projects.map(project => 
     <div key={project.id} className={styles.card}>
-      <div>
+      <header className={styles.header}>
         <h3>{project.title}</h3>
         <div className={styles.icons}>
-          <a href={project.github}>
-            <FaGithub/>
-          </a>
-          <a href={project.link} className={styles.external}>
-            <FiExternalLink />
-          </a>
+          {project.github ? 
+            <a href={project.github}>
+              <FaGithub/>
+            </a>
+            : ''          
+          }
+          {project.link ? 
+            <a href={project.link} className={styles.external}>
+              <FiExternalLink />
+            </a>
+            : ''
+          }
         </div>
-      </div>
+      </header>
       <div>
         <p>{project.description}</p>
       </div>
@@ -89,7 +90,7 @@ export default function Works() {
         <h2><span>04.</span> Works</h2>        
       </div>
       <div className="content">
-        <div className={styles.content}>
+        <div className={styles.projectGrid}>
           {card}
         </div>
       </div>
