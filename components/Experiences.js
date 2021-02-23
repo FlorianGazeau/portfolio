@@ -46,9 +46,6 @@ export default function Experiences() {
         </div>
         <h4 className={styles.post}>{job.post}</h4>
       </div>
-      {/* <div>
-        <p>{job.description}</p>
-      </div> */}
   </div>
   )
   return (

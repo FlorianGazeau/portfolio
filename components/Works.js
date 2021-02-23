@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import { FaGithub } from 'react-icons/fa';
-import {FiExternalLink} from 'react-icons/Fi'
+import {FiExternalLink} from 'react-icons/fi'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
