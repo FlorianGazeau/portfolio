@@ -5,18 +5,14 @@ import styles from '../styles/Skills.module.css'
 
 export default function Skills() {
 
-  useEffect(() => {
-    AOS.init({ duration: 2000});
-  }, []);
-
   return (
     <section id="section-skills" className={styles.section}>
-      <div className="title" data-aos="fade-up">
+      <div className="title">
         <h2><span>03.</span> Skills</h2>        
       </div>
       <div className="content">
         <div className={styles.content}>
-          <div className={styles.item} data-aos="fade-up" data-aos-delay= "500">
+          <div className={styles.item}>
             <h3 >Langages</h3>
             <ul >
               <li>Javascript (ES6)</li>
@@ -27,7 +23,7 @@ export default function Skills() {
               <li>C</li>
             </ul>
           </div>
-          <div data-aos="fade-up" data-aos-delay= "1000">
+          <div>
             <h3 >Frameworks</h3>
             <ul>
               <li>React</li>
@@ -39,7 +35,7 @@ export default function Skills() {
               <li>Bootstrap</li>
             </ul>
           </div>
-          <div data-aos="fade-up" data-aos-delay= "1500">
+          <div>
             <h3>Tools</h3>
             <ul>
               <li>Bash</li>
@@ -48,7 +44,7 @@ export default function Skills() {
               <li>Chrome DevTools</li>
             </ul>          
           </div>
-          <div data-aos="fade-up" data-aos-delay= "2000">
+          <div>
             <h3 >Design</h3>
             <ul >
               <li>Adobe XD</li>

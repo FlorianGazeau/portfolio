@@ -1,6 +1,4 @@
-import React, {useEffect} from 'react'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react'
 
 import styles from '../styles/Experiences.module.css'
 
@@ -33,12 +31,8 @@ const Jobs = [
 
 export default function Experiences() {
 
-  useEffect(() => {
-    AOS.init({ duration: 2000});
-  }, []);
-
   const card = Jobs.map((job, i) => 
-    <div key={i} className={styles.card} data-aos="fade-up" data-aos-delay= "1000">
+    <div key={i} className={styles.card}>
       <div>
         <div className={styles.flex}>
           <h3>{job.title}</h3>
@@ -46,11 +40,11 @@ export default function Experiences() {
         </div>
         <h4 className={styles.post}>{job.post}</h4>
       </div>
-  </div>
+    </div>
   )
   return (
     <section id="section-experiences" className="section">
-      <div className="title" data-aos="fade-up">
+      <div className="title">
         <h2><span>02.</span> Experiences</h2>        
       </div>
       <div className="content">

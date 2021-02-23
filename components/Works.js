@@ -1,8 +1,7 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { FaGithub } from 'react-icons/fa';
 import {FiExternalLink} from 'react-icons/fi'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 import styles from '../styles/Works.module.css'
 
@@ -59,12 +58,9 @@ export const Projects = [
 ]
 
 export default function Works() {
-  useEffect(() => {
-    AOS.init({ duration: 2000});
-  }, []);
 
   const card = Projects.map(project => 
-    <div key={project.id} className={styles.card} data-aos="fade-up" data-aos-delay= "500">
+    <div key={project.id} className={styles.card}>
       <div>
         <h3>{project.title}</h3>
         <div className={styles.icons}>
@@ -89,7 +85,7 @@ export default function Works() {
 
   return (
     <section id="section-works" className="section">
-      <div className="title" data-aos="fade-up">
+      <div className="title">
         <h2><span>04.</span> Works</h2>        
       </div>
       <div className="content">
