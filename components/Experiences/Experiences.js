@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from '../styles/Experiences.module.css'
+import styles from './Experiences.module.css'
 
 const Jobs = [
   {

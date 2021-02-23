@@ -3,7 +3,7 @@ import { FaGithub } from 'react-icons/fa';
 import {FiExternalLink} from 'react-icons/fi'
 
 
-import styles from '../styles/Works.module.css'
+import styles from './Works.module.css'
 
 export const Projects = [
   {

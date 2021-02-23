@@ -1,20 +1,15 @@
-import Head from 'next/head'
-import About from '../components/About'
+import About from '../components/About/About'
 import Contact from '../components/Contact/Contact'
-import Experiences from '../components/Experiences'
+import Experiences from '../components/Experiences/Experiences'
 import Footer from '../components/Footer/Footer'
-import Hero from '../components/Hero'
-import Skills from '../components/Skills'
-import Works from '../components/Works'
+import Hero from '../components/Hero/Hero'
+import Skills from '../components/Skills/Skills'
+import Works from '../components/Work/Works'
 
 export default function Home() {
 
-  const handleScroll = () => {
-    console.log('yes')
-  }
-  
   return (
-    <div onScroll={handleScroll}>
+    <div>
       <Hero/>
       <About />
       <Experiences />

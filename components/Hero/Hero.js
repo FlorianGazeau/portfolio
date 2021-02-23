@@ -1,8 +1,8 @@
 import React from 'react'
-import Nav from './Nav'
+import Nav from '../Nav/Nav'
 import { FaGithub, FaTwitter, FaLinkedin, FaCodepen, FaInstagram } from 'react-icons/fa';
 import { BsArrowRight } from 'react-icons/bs';
-import styles from '../styles/Hero.module.css'
+import styles from './Hero.module.css'
 
 export default function Hero() {
   return (

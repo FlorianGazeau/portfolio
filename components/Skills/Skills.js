@@ -1,7 +1,6 @@
-import React, {useEffect} from 'react'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import styles from '../styles/Skills.module.css'
+import React from 'react'
+
+import styles from './Skills.module.css'
 
 export default function Skills() {
 
