@@ -29,6 +29,7 @@
 .tags {
   display: flex;
   margin-top: 0.7em;
+  flex-wrap: wrap;
 }
 
 .tag {
@@ -37,6 +38,7 @@
   color: var(--white);
   font-size: 0.7em;
   padding: 0.5em 1.3em;
+  margin-bottom: 1em;
 }
 
 
