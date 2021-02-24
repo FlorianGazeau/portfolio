@@ -24,7 +24,7 @@ export const Projects = [
   {
     id: 3,
     title: "Clinique Juridique Montpellier",
-    description: "I developed the showcase site of the Legal Clinic of Montpelier under wordpress. I used a tool like Elementor to create the different parts of the site. I also used a plugin for the translation of the site in 5 different languages",
+    description: "I developed the showcase site of the Legal Clinic of Montpellier under wordpress. I used a tool like Elementor to create the different parts of the site. I also used a plugin for the translation of the site in 5 different languages",
     tag: ["Wordpress", "Elementor"],
     link: "https://www.cliniquejuridique.eu/"
   },
