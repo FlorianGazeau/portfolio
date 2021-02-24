@@ -10,7 +10,7 @@ const Jobs = [
     date: "january 2018 - present",
   },
   {
-    title: "Clinique Juridique Montpelier",
+    title: "Clinique Juridique Montpellier",
     post: "Freelance - Developer",
     // description: "",
     date: "july 2020",

@@ -6,13 +6,13 @@ import {FiExternalLink} from 'react-icons/fi'
 import styles from './Works.module.css'
 
 export const Projects = [
-  {
-    id: 1,
-    title: "Movie App - WIP",
-    description: "Personal Project. We decided to build, with a friend, our own Movie App. We can rate a movie, add to watchlist or to watched. For series, the app allows you to know our progress in a season, to know if an episode has been completed.",
-    tag: ["React", "Firebase", "Sass", "TMDB Api", "React Hooks"],
-    github: "https://github.com/FlorianGazeau/movieApp",
-  },
+  // {
+  //   id: 1,
+  //   title: "Movie App - WIP",
+  //   description: "Personal Project. We decided to build, with a friend, our own Movie App. We can rate a movie, add to watchlist or to watched. For series, the app allows you to know our progress in a season, to know if an episode has been completed.",
+  //   tag: ["React", "Firebase", "Sass", "TMDB Api", "React Hooks"],
+  //   github: "https://github.com/FlorianGazeau/movieApp",
+  // },
   {
     id: 2,
     title: "Trasher Ecom App",
